@@ -16,3 +16,5 @@ accessKey e secretKey: Chaves de acessos do object storage, [clique aqui](https:
 bucketName: nome do bucket a ser criado para armazenar os dados do Milvus.
 
 5. Execute `terraform apply`.
+
+6. Após finalizar a execução do 5 passo, execute `kubectl --kubeconfig=kubeconfig.yaml get pods` e verifique se todos os pods estão com status de running ou complete.
