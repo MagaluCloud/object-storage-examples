@@ -6,9 +6,10 @@
 
 3. Execute `terraform init` para baixar os providers necessários
 
-4. Crie um arquivo secrets.tfvars seguindo o exemplo em secrets.tfvars.example e preencha as variaveis com as informações de sua conta na [Magalu Cloud](https://console.magalu.cloud/).
+4. Crie um arquivo secrets.tfvars seguindo o exemplo em secrets.tfvars.example e preencha as váriaveis com as informações de sua conta na [Magalu Cloud](https://console.magalu.cloud/).
 
 As informações necessárias são:
+
 host: Endpoint do object storage do magalu - "(br-se1 ou br-ne1).magaluobjects.com"
 
 accessKey e secretKey: Chaves de acessos do object storage, [clique aqui](https://docs.magalu.cloud/docs/devops-tools/api-keys/how-to/object-storage/create-api-keys) para saber como obtelas.
