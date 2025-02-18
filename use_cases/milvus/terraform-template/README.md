@@ -6,7 +6,7 @@
 
 3. Execute `terraform init` para baixar os providers necessários
 
-4. Procure em values.yaml a sessão externalS3 e preencha com as informações de sua conta na [Magalu Cloud](https://console.magalu.cloud/).
+4. Crie um arquivo secrets.tfvars seguindo o exemplo em secrets.tfvars.example e preencha as variaveis com as informações de sua conta na [Magalu Cloud](https://console.magalu.cloud/).
 
 As informações necessárias são:
 host: Endpoint do object storage do magalu - "(br-se1 ou br-ne1).magaluobjects.com"
@@ -15,6 +15,6 @@ accessKey e secretKey: Chaves de acessos do object storage, [clique aqui](https:
 
 bucketName: nome do bucket a ser criado para armazenar os dados do Milvus.
 
-5. Execute `terraform apply`.
+5. Execute `terraform apply -var-file="secrets.tfvars"`.
 
 6. Após finalizar a execução do 5 passo, execute `kubectl --kubeconfig=kubeconfig.yaml get pods` e verifique se todos os pods estão com status de running ou complete.

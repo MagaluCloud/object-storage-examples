@@ -1206,12 +1206,12 @@ kafka:
 ###################################
 externalS3:
   enabled: true
-  host: "br-se1.magaluobjects.com"
+  host: "${host}"
   port: "443"
-  accessKey: "xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx"
-  secretKey: "xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx"
+  accessKey: "${accessKey}"
+  secretKey: "${secretKey}"
   useSSL: true
-  bucketName: "bucket-name"
+  bucketName: "${bucketName}"
   cloudProvider: "aws"
 
 ###################################

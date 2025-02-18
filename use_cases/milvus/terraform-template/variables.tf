@@ -33,3 +33,22 @@ variable "nodepool_flavor" {
   type        = string
   default     = "cloud-k8s.gp1.medium"
 }
+
+# Variáveis para substituir no YAML
+variable "host" {
+  description = "Endpoint do object storage"
+  type        = string
+  default = "br-se1.magaluobjects.com"
+}
+
+variable "accessKey" {
+  type        = string
+}
+
+variable "secretKey" {
+  type        = string
+}
+
+variable "bucketName" {
+  type        = string
+}
